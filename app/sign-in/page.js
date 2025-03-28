@@ -24,7 +24,7 @@ export default function SignIn(){
         sessionStorage.setItem('user', true);
         setEmail('');
         setPassword('');
-        router.push('/add');
+        router.push('/changes');
       }
     }catch(e){
         console.error(e);
@@ -40,14 +40,14 @@ export default function SignIn(){
           placeholder="Email" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
-          className="w-full p-3 mb-4 bg-700 rounded outline text-white placeholder-white-500"
+          className="w-full p-3 mb-4 bg-700 rounded outline text-black placeholder-black-500"
         />
         <input 
           type="password" 
           placeholder="Password" 
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
-          className="w-full p-3 mb-4 bg-700 rounded outline text-white placeholder-white-500"
+          className="w-full p-3 mb-4 bg-700 rounded outline text-black placeholder-black-500"
         />
         {error && <p className="text-red-500 text-xs italic mb-4">{error.message}</p>}
         <button 

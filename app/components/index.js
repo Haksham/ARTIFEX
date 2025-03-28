@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export default function Index() {
   const [images, setImages] = useState([]);
-  const [selectedImage, setSelectedImage] = useState(null); // State to track the selected image
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -20,40 +20,46 @@ export default function Index() {
   }, []);
 
   const handleImageClick = (image) => {
-    setSelectedImage(image); // Set the clicked image as the selected image
+    setSelectedImage(image);
   };
 
   const closeModal = () => {
-    setSelectedImage(null); // Close the modal by resetting the selected image
+    setSelectedImage(null);
   };
 
-  return (
-    <div>
-      <h1 className="text-center">Uploaded Images</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-        {images.map((image) => (
-          <div
-            key={image.public_id}
-            className="border-0 p-2 flex flex-col items-center cursor-pointer"
-            onClick={() => handleImageClick(image)} // Handle image click
-          >
-            <img
-              src={image.url}
-              alt={image.public_id}
-              className="w-40 h-40 rounded-full object-cover" // Circular styling
-            />
-            <h3 className="mt-2 font-bold text-center">{image.title}</h3>
-            <p className="text-center">{image.description}</p>
-          </div>
-        ))}
+  return (<>
+    <div className={` flex flex-col justify-center py-5 items-center m-0`}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 justify-center items-center">
+      {images.map((image) => (
+      <div
+        key={image.public_id}
+        className="border-0 p-2 flex flex-col items-center rounded-full h-50 w-50 cursor-pointer justify-center"
+        onClick={() => handleImageClick(image)}
+        style={{
+          backgroundImage: "url('/images/circle.jpg')", 
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <img
+          src={image.url}
+          alt={image.public_id}
+          className="w-40 h-40 rounded-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    ))}
       </div>
 
-      {/* Modal for full-screen image */}
-      {selectedImage && (<>
-       
+      {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
-          onClick={closeModal} // Close modal when clicking outside the image
+          className="fixed inset-0 max-w-full max-h-screen flex justify-center items-center z-50"
+          onClick={closeModal}
+          style={{
+            backgroundColor: "rgba(30, 29, 29, 0.42)",
+            backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
+          }}
         >
           <div className="relative">
             <img
@@ -63,8 +69,17 @@ export default function Index() {
             />
           </div>
         </div>
-        </>
       )}
     </div>
+    <div
+        className="fixed right-1 top-18 w-20 h-30 cursor-pointer"
+        style={{
+          backgroundImage: "url('/images/fin.png')", 
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", 
+        }}
+      ></div>
+    </>
   );
 }
