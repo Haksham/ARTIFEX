@@ -2,7 +2,6 @@
 
 Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth Mehta**, a professional painter. This website allows users to explore a gallery of paintings, manage images, and learn more about the artist.
 
-![Artifex Banner](https://via.placeholder.com/1200x400?text=Artifex+Website+Banner)
 
 ---
 
@@ -21,13 +20,13 @@ Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth M
 ## 🖼️ Interface
 
 ### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+![Home Page](public/images/index.png)
 
 ### Image Management
-![Image Management](https://via.placeholder.com/800x400?text=Image+Management)
+![Image Management](public/images/add.png)
 
 ### About Page
-![About Page](https://via.placeholder.com/800x400?text=About+Page)
+![About Page](public/images/about.png)
 
 ---
 
