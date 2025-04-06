@@ -93,40 +93,40 @@ Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth M
 
 
 ## Project Structure
-   artifex_website/
-   ├── app/
-   │   ├── add/
-   │   │   └── page.js          # Add Image Page
-   │   ├── api/
-   │   │   ├── route.js         # API for image management
-   │   │   └── visitor-count/
-   │   │       └── route.js     # Visitor count API
-   │   ├── changes/
-   │   │   └── page.js          # Manage Images Page
-   │   ├── components/
-   │   │   ├── footer.js        # Footer Component
-   │   │   ├── header.js        # Header Component
-   │   │   ├── index.js         # Gallery Component
-   │   │   └── remove.js        # Remove Image Component
-   │   ├── firebase/
-   │   │   └── config.js        # Firebase Configuration
-   │   ├── globals.css          # Global Styles
-   │   ├── info/
-   │   │   └── page.js          # About Page
-   │   ├── layout.js            # Root Layout
-   │   ├── page.js              # Home Page
-   │   ├── sign-in/
-   │   │   └── page.js          # Sign-In Page
-   │   └── utils/
-   │       └── cloudinary.js    # Cloudinary Configuration
-   ├── .gitignore               # Git Ignore File
-   ├── LICENSE                  # License File
-   ├── README.md                # Project Documentation
-   ├── jsconfig.json            # JavaScript Config
-   ├── next.config.mjs         # Next.js Config
-   ├── package.json             # Project Metadata and Scripts
-   ├── postcss.config.mjs       # PostCSS Config
-   └── tailwind.config.js       # Tailwind CSS Config
+      artifex_website/
+      ├── app/
+      │   ├── add/
+      │   │   └── page.js          # Add Image Page
+      │   ├── api/
+      │   │   ├── route.js         # API for image management
+      │   │   └── visitor-count/
+      │   │       └── route.js     # Visitor count API
+      │   ├── changes/
+      │   │   └── page.js          # Manage Images Page
+      │   ├── components/
+      │   │   ├── footer.js        # Footer Component
+      │   │   ├── header.js        # Header Component
+      │   │   ├── index.js         # Gallery Component
+      │   │   └── remove.js        # Remove Image Component
+      │   ├── firebase/
+      │   │   └── config.js        # Firebase Configuration
+      │   ├── globals.css          # Global Styles
+      │   ├── info/
+      │   │   └── page.js          # About Page
+      │   ├── layout.js            # Root Layout
+      │   ├── page.js              # Home Page
+      │   ├── sign-in/
+      │   │   └── page.js          # Sign-In Page
+      │   └── utils/
+      │       └── cloudinary.js    # Cloudinary Configuration
+      ├── .gitignore               # Git Ignore File
+      ├── LICENSE                  # License File
+      ├── README.md                # Project Documentation
+      ├── jsconfig.json            # JavaScript Config
+      ├── next.config.mjs         # Next.js Config
+      ├── package.json             # Project Metadata and Scripts
+      ├── postcss.config.mjs       # PostCSS Config
+      └── tailwind.config.js       # Tailwind CSS Config
 
 ## Acknowledgments
   - Cloudinary for image storage.<br>
