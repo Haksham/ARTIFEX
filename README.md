@@ -77,56 +77,56 @@ Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth M
    ```bash
    git clone https://github.com/your-username/artifex-website.git
    cd artifex-website
-   ```
+   
 2. Install dependencies:
    ```bash
    npm run install
    pip install -r requirements.txt
-   ```
+   
 3. Run the development server:
    ```bash
    - npm run dev
    - npm run build
    - npm run start
    - Open http://localhost:3000 in your browser to view the project.
-```
+
 
 
 ## Project Structure
-      artifex_website/
-      ├── app/
-      │   ├── add/
-      │   │   └── page.js          # Add Image Page
-      │   ├── api/
-      │   │   ├── route.js         # API for image management
-      │   │   └── visitor-count/
-      │   │       └── route.js     # Visitor count API
-      │   ├── changes/
-      │   │   └── page.js          # Manage Images Page
-      │   ├── components/
-      │   │   ├── footer.js        # Footer Component
-      │   │   ├── header.js        # Header Component
-      │   │   ├── index.js         # Gallery Component
-      │   │   └── remove.js        # Remove Image Component
-      │   ├── firebase/
-      │   │   └── config.js        # Firebase Configuration
-      │   ├── globals.css          # Global Styles
-      │   ├── info/
-      │   │   └── page.js          # About Page
-      │   ├── layout.js            # Root Layout
-      │   ├── page.js              # Home Page
-      │   ├── sign-in/
-      │   │   └── page.js          # Sign-In Page
-      │   └── utils/
-      │       └── cloudinary.js    # Cloudinary Configuration
-      ├── .gitignore               # Git Ignore File
-      ├── LICENSE                  # License File
-      ├── README.md                # Project Documentation
-      ├── jsconfig.json            # JavaScript Config
-      ├── next.config.mjs         # Next.js Config
-      ├── package.json             # Project Metadata and Scripts
-      ├── postcss.config.mjs       # PostCSS Config
-      └── tailwind.config.js       # Tailwind CSS Config
+   artifex_website/
+   ├── app/
+   │   ├── add/
+   │   │   └── page.js          # Add Image Page
+   │   ├── api/
+   │   │   ├── route.js         # API for image management
+   │   │   └── visitor-count/
+   │   │       └── route.js     # Visitor count API
+   │   ├── changes/
+   │   │   └── page.js          # Manage Images Page
+   │   ├── components/
+   │   │   ├── footer.js        # Footer Component
+   │   │   ├── header.js        # Header Component
+   │   │   ├── index.js         # Gallery Component
+   │   │   └── remove.js        # Remove Image Component
+   │   ├── firebase/
+   │   │   └── config.js        # Firebase Configuration
+   │   ├── globals.css          # Global Styles
+   │   ├── info/
+   │   │   └── page.js          # About Page
+   │   ├── layout.js            # Root Layout
+   │   ├── page.js              # Home Page
+   │   ├── sign-in/
+   │   │   └── page.js          # Sign-In Page
+   │   └── utils/
+   │       └── cloudinary.js    # Cloudinary Configuration
+   ├── .gitignore               # Git Ignore File
+   ├── LICENSE                  # License File
+   ├── README.md                # Project Documentation
+   ├── jsconfig.json            # JavaScript Config
+   ├── next.config.mjs         # Next.js Config
+   ├── package.json             # Project Metadata and Scripts
+   ├── postcss.config.mjs       # PostCSS Config
+   └── tailwind.config.js       # Tailwind CSS Config
 
 ## Acknowledgments
   - Cloudinary for image storage.<br>
@@ -135,4 +135,5 @@ Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth M
   - Next.js for the framework.<br>
   - Tailwind CSS for styling.<br>
 <br>
+
 # Feel free to contribute to this project by submitting issues or pull requests. Happy coding!
