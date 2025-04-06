@@ -11,7 +11,6 @@ Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth M
 - **Image Management**: Add, delete, and manage images (admin functionality).
 - **Authentication**: Secure login system using Firebase.
 - **Visitor Counter**: Tracks the number of visitors to the website.
-- **Dark Mode Support**: Automatically adjusts based on the user's system preferences.
 - **Cloudinary Integration**: Efficient image storage and retrieval.
 - **Responsive Design**: Optimized for all devices.
 
