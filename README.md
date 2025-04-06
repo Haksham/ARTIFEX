@@ -1,37 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Artifex Website 🎨
 
-## Getting Started
+Welcome to **Artifex**, a platform showcasing the stunning artwork of **Paarth Mehta**, a professional painter. This website allows users to explore a gallery of paintings, manage images, and learn more about the artist.
 
-First, run the development server:
+![Artifex Banner](https://via.placeholder.com/1200x400?text=Artifex+Website+Banner)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🌟 Features
+
+- **Dynamic Gallery**: View a collection of paintings with a clean and responsive design.
+- **Image Management**: Add, delete, and manage images (admin functionality).
+- **Authentication**: Secure login system using Firebase.
+- **Visitor Counter**: Tracks the number of visitors to the website.
+- **Dark Mode Support**: Automatically adjusts based on the user's system preferences.
+- **Cloudinary Integration**: Efficient image storage and retrieval.
+- **Responsive Design**: Optimized for all devices.
+
+---
+
+## 🖼️ Interface
+
+### Home Page
+![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+
+### Image Management
+![Image Management](https://via.placeholder.com/800x400?text=Image+Management)
+
+### About Page
+![About Page](https://via.placeholder.com/800x400?text=About+Page)
+
+---
+
+## ⚙️ Functionality
+
+1. **Gallery**: Displays images fetched from Cloudinary.
+2. **Add Image**: Upload images with titles and descriptions.
+3. **Delete Image**: Remove images from the gallery.
+4. **Authentication**: Login functionality using Firebase.
+5. **Visitor Count**: Tracks and displays the number of visitors using MongoDB.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React, Next.js, Tailwind CSS
+- **Backend**: Node.js, MongoDB
+- **Authentication**: Firebase
+- **Image Storage**: Cloudinary
+- **Deployment**: Vercel
+
+---
+
+## 📋 Requirements
+
+- Node.js (v16 or higher)
+- MongoDB Atlas or local MongoDB instance
+- Cloudinary account
+- Firebase project with authentication enabled
+- Environment variables:
+  - `NEXT_PUBLIC_FIREBASE_API_KEY`
+  - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`
+  - `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+  - `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET`
+  - `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID`
+  - `NEXT_PUBLIC_FIREBASE_APP_ID`
+  - `CLOUDINARY_CLOUD_NAME`
+  - `CLOUDINARY_API_KEY`
+  - `CLOUDINARY_API_SECRET`
+  - `MONGODB_URI`
+
+---
+
+## 🚀 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/artifex-website.git
+   cd artifex-website
+   ```
+2. Install dependencies:
+   ```bash
+   npm run install
+   pip install -r requirements.txt
+   ```
+3. Run the development server:
+   ```bash
+   - npm run dev
+   - npm run build
+   - npm run start
+   - Open http://localhost:3000 in your browser to view the project.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
+      artifex_website/
+      ├── app/
+      │   ├── add/
+      │   │   └── page.js          # Add Image Page
+      │   ├── api/
+      │   │   ├── route.js         # API for image management
+      │   │   └── visitor-count/
+      │   │       └── route.js     # Visitor count API
+      │   ├── changes/
+      │   │   └── page.js          # Manage Images Page
+      │   ├── components/
+      │   │   ├── footer.js        # Footer Component
+      │   │   ├── header.js        # Header Component
+      │   │   ├── index.js         # Gallery Component
+      │   │   └── remove.js        # Remove Image Component
+      │   ├── firebase/
+      │   │   └── config.js        # Firebase Configuration
+      │   ├── globals.css          # Global Styles
+      │   ├── info/
+      │   │   └── page.js          # About Page
+      │   ├── layout.js            # Root Layout
+      │   ├── page.js              # Home Page
+      │   ├── sign-in/
+      │   │   └── page.js          # Sign-In Page
+      │   └── utils/
+      │       └── cloudinary.js    # Cloudinary Configuration
+      ├── .gitignore               # Git Ignore File
+      ├── LICENSE                  # License File
+      ├── README.md                # Project Documentation
+      ├── jsconfig.json            # JavaScript Config
+      ├── next.config.mjs         # Next.js Config
+      ├── package.json             # Project Metadata and Scripts
+      ├── postcss.config.mjs       # PostCSS Config
+      └── tailwind.config.js       # Tailwind CSS Config
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
+## Acknowledgments
+  - Cloudinary for image storage.<br>
+  - Firebase for authentication.<br>
+  - MongoDB for visitor tracking.<br>
+  - Next.js for the framework.<br>
+  - Tailwind CSS for styling.<br>
+<br>
+# Feel free to contribute to this project by submitting issues or pull requests. Happy coding!
